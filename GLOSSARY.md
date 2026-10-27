@@ -39,3 +39,30 @@ _Avoid_: extension, widget, UI plugin
 The Brand Package a project has selected; the one every Skill and MCP call applies
 unless told otherwise.
 _Avoid_: current brand, default brand, client
+
+**Package Manifest**:
+The one document in a Brand Package that states the brand's identity and names
+everything in the package a Skill or the MCP server can address.
+_Avoid_: package config, index, brand.json, manifest file
+
+**Asset**:
+A file the brand supplies rather than describes: a logo variant, icon,
+illustration, image or font, declared in the Package Manifest with the rules for
+its use.
+_Avoid_: file, resource, media, attachment
+
+**Token**:
+One named CVI value (a colour, a dimension, a type style, a shadow) in DTCG
+form; the machine-readable layer of a Brand Package.
+_Avoid_: variable, CSS variable, style value
+
+**Mode**:
+A context a Brand Package's tokens resolve under, such as light or dark. Every
+package has at least one.
+_Avoid_: theme, colour scheme, variant
+
+**Generated Output**:
+A file built from a Brand Package's tokens and Package Manifest (CSS variables,
+a Tailwind theme, a font-face stylesheet), kept in the package and never
+hand-edited.
+_Avoid_: dist, build artifact, compiled tokens
