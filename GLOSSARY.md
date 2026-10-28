@@ -81,3 +81,8 @@ _Avoid_: lint, Brand Check, audit
 The deterministic check of a project's code against its Active Brand: literal
 values that should be Tokens, stale Generated Outputs, altered Assets.
 _Avoid_: lint, audit, Package Validation, brand review
+
+**Sub-brand**:
+A variant of a Brand Package's CVI, such as a product line or campaign brand,
+selected inside the parent package rather than kept as a package of its own.
+_Avoid_: child brand, brand variant, sub-package
