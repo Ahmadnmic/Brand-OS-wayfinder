@@ -1,0 +1,993 @@
+{
+ "list_brands": {
+  "active": {
+   "id": "fjord",
+   "name": "Fjord Studio",
+   "repo": "fjord-studio/brand-fjord",
+   "pinned": "1.0.0",
+   "latest": "1.1.0",
+   "latestIsMajor": false,
+   "stale": false,
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "references": [
+    {
+     "name": "logo-usage",
+     "kind": "logo"
+    },
+    {
+     "name": "colour",
+     "kind": "colour"
+    },
+    {
+     "name": "typography",
+     "kind": "typography"
+    },
+    {
+     "name": "button",
+     "kind": "component"
+    },
+    {
+     "name": "imagery",
+     "kind": "imagery"
+    }
+   ]
+  },
+  "brands": [
+   {
+    "id": "fjord",
+    "name": "Fjord Studio",
+    "repo": "fjord-studio/brand-fjord",
+    "pinned": "1.0.0",
+    "latest": "1.1.0",
+    "latestIsMajor": false,
+    "stale": false,
+    "modes": [
+     "light",
+     "dark"
+    ],
+    "references": [
+     {
+      "name": "logo-usage",
+      "kind": "logo"
+     },
+     {
+      "name": "colour",
+      "kind": "colour"
+     },
+     {
+      "name": "typography",
+      "kind": "typography"
+     },
+     {
+      "name": "button",
+      "kind": "component"
+     },
+     {
+      "name": "imagery",
+      "kind": "imagery"
+     }
+    ]
+   },
+   {
+    "id": "acme",
+    "name": "Acme Corp",
+    "pinned": null,
+    "latest": "2.3.0"
+   },
+   {
+    "id": "nordlys",
+    "name": "Nordlys",
+    "refused": "invalid_package: color.action.primary has no hex"
+   }
+  ]
+ },
+ "light": {
+  "brand": "fjord",
+  "mode": "light",
+  "tokens": [
+   {
+    "path": "color.surface.page",
+    "type": "color",
+    "value": "#fbf8f3",
+    "hex": "#fbf8f3",
+    "cssVar": "--brand-color-surface-page"
+   },
+   {
+    "path": "color.surface.raised",
+    "type": "color",
+    "value": "#f6f7f8",
+    "hex": "#f6f7f8",
+    "cssVar": "--brand-color-surface-raised"
+   },
+   {
+    "path": "color.text.default",
+    "type": "color",
+    "value": "#16191d",
+    "hex": "#16191d",
+    "cssVar": "--brand-color-text-default"
+   },
+   {
+    "path": "color.text.muted",
+    "type": "color",
+    "value": "#5b6570",
+    "hex": "#5b6570",
+    "cssVar": "--brand-color-text-muted"
+   },
+   {
+    "path": "color.text.on-action",
+    "type": "color",
+    "value": "#f6f7f8",
+    "hex": "#f6f7f8",
+    "cssVar": "--brand-color-text-on-action"
+   },
+   {
+    "path": "color.action.primary",
+    "type": "color",
+    "value": "#1f6aa6",
+    "hex": "#1f6aa6",
+    "cssVar": "--brand-color-action-primary"
+   },
+   {
+    "path": "color.action.primary-hover",
+    "type": "color",
+    "value": "#185585",
+    "hex": "#185585",
+    "cssVar": "--brand-color-action-primary-hover"
+   },
+   {
+    "path": "color.border.default",
+    "type": "color",
+    "value": "#d9dde1",
+    "hex": "#d9dde1",
+    "cssVar": "--brand-color-border-default"
+   },
+   {
+    "path": "color.status.error",
+    "type": "color",
+    "value": "#c8372d",
+    "hex": "#c8372d",
+    "cssVar": "--brand-color-status-error"
+   },
+   {
+    "path": "color.status.success",
+    "type": "color",
+    "value": "#2f8a4e",
+    "hex": "#2f8a4e",
+    "cssVar": "--brand-color-status-success"
+   },
+   {
+    "path": "type.display",
+    "type": "typography",
+    "value": "Fjord Display 700 \u00b7 3rem/1.1",
+    "cssVar": "--brand-type-display"
+   },
+   {
+    "path": "type.heading",
+    "type": "typography",
+    "value": "Fjord Display 700 \u00b7 1.75rem/1.2",
+    "cssVar": "--brand-type-heading"
+   },
+   {
+    "path": "type.body",
+    "type": "typography",
+    "value": "Fjord Sans 400 \u00b7 1rem/1.5",
+    "cssVar": "--brand-type-body"
+   },
+   {
+    "path": "type.label",
+    "type": "typography",
+    "value": "Fjord Sans 500 \u00b7 0.875rem/1.3",
+    "cssVar": "--brand-type-label"
+   },
+   {
+    "path": "space.xs",
+    "type": "dimension",
+    "value": "0.25rem",
+    "cssVar": "--brand-space-xs"
+   },
+   {
+    "path": "space.sm",
+    "type": "dimension",
+    "value": "0.5rem",
+    "cssVar": "--brand-space-sm"
+   },
+   {
+    "path": "space.md",
+    "type": "dimension",
+    "value": "1rem",
+    "cssVar": "--brand-space-md"
+   },
+   {
+    "path": "space.lg",
+    "type": "dimension",
+    "value": "1.5rem",
+    "cssVar": "--brand-space-lg"
+   },
+   {
+    "path": "space.xl",
+    "type": "dimension",
+    "value": "2.5rem",
+    "cssVar": "--brand-space-xl"
+   },
+   {
+    "path": "radius.sm",
+    "type": "dimension",
+    "value": "0.25rem",
+    "cssVar": "--brand-radius-sm"
+   },
+   {
+    "path": "radius.md",
+    "type": "dimension",
+    "value": "0.5rem",
+    "cssVar": "--brand-radius-md"
+   },
+   {
+    "path": "radius.pill",
+    "type": "dimension",
+    "value": "999px",
+    "cssVar": "--brand-radius-pill"
+   },
+   {
+    "path": "motion.duration.fast",
+    "type": "duration",
+    "value": "120ms",
+    "cssVar": "--brand-motion-duration-fast"
+   },
+   {
+    "path": "motion.duration.base",
+    "type": "duration",
+    "value": "220ms",
+    "cssVar": "--brand-motion-duration-base"
+   }
+  ]
+ },
+ "dark": {
+  "brand": "fjord",
+  "mode": "dark",
+  "tokens": [
+   {
+    "path": "color.surface.page",
+    "type": "color",
+    "value": "#16191d",
+    "hex": "#16191d",
+    "cssVar": "--brand-color-surface-page"
+   },
+   {
+    "path": "color.surface.raised",
+    "type": "color",
+    "value": "#2b3138",
+    "hex": "#2b3138",
+    "cssVar": "--brand-color-surface-raised"
+   },
+   {
+    "path": "color.text.default",
+    "type": "color",
+    "value": "#f6f7f8",
+    "hex": "#f6f7f8",
+    "cssVar": "--brand-color-text-default"
+   },
+   {
+    "path": "color.text.muted",
+    "type": "color",
+    "value": "#9aa3ad",
+    "hex": "#9aa3ad",
+    "cssVar": "--brand-color-text-muted"
+   },
+   {
+    "path": "color.text.on-action",
+    "type": "color",
+    "value": "#f6f7f8",
+    "hex": "#f6f7f8",
+    "cssVar": "--brand-color-text-on-action"
+   },
+   {
+    "path": "color.action.primary",
+    "type": "color",
+    "value": "#7fb6dc",
+    "hex": "#7fb6dc",
+    "cssVar": "--brand-color-action-primary"
+   },
+   {
+    "path": "color.action.primary-hover",
+    "type": "color",
+    "value": "#d4e8f5",
+    "hex": "#d4e8f5",
+    "cssVar": "--brand-color-action-primary-hover"
+   },
+   {
+    "path": "color.border.default",
+    "type": "color",
+    "value": "#5b6570",
+    "hex": "#5b6570",
+    "cssVar": "--brand-color-border-default"
+   },
+   {
+    "path": "color.status.error",
+    "type": "color",
+    "value": "#c8372d",
+    "hex": "#c8372d",
+    "cssVar": "--brand-color-status-error"
+   },
+   {
+    "path": "color.status.success",
+    "type": "color",
+    "value": "#2f8a4e",
+    "hex": "#2f8a4e",
+    "cssVar": "--brand-color-status-success"
+   },
+   {
+    "path": "type.display",
+    "type": "typography",
+    "value": "Fjord Display 700 \u00b7 3rem/1.1",
+    "cssVar": "--brand-type-display"
+   },
+   {
+    "path": "type.heading",
+    "type": "typography",
+    "value": "Fjord Display 700 \u00b7 1.75rem/1.2",
+    "cssVar": "--brand-type-heading"
+   },
+   {
+    "path": "type.body",
+    "type": "typography",
+    "value": "Fjord Sans 400 \u00b7 1rem/1.5",
+    "cssVar": "--brand-type-body"
+   },
+   {
+    "path": "type.label",
+    "type": "typography",
+    "value": "Fjord Sans 500 \u00b7 0.875rem/1.3",
+    "cssVar": "--brand-type-label"
+   },
+   {
+    "path": "space.xs",
+    "type": "dimension",
+    "value": "0.25rem",
+    "cssVar": "--brand-space-xs"
+   },
+   {
+    "path": "space.sm",
+    "type": "dimension",
+    "value": "0.5rem",
+    "cssVar": "--brand-space-sm"
+   },
+   {
+    "path": "space.md",
+    "type": "dimension",
+    "value": "1rem",
+    "cssVar": "--brand-space-md"
+   },
+   {
+    "path": "space.lg",
+    "type": "dimension",
+    "value": "1.5rem",
+    "cssVar": "--brand-space-lg"
+   },
+   {
+    "path": "space.xl",
+    "type": "dimension",
+    "value": "2.5rem",
+    "cssVar": "--brand-space-xl"
+   },
+   {
+    "path": "radius.sm",
+    "type": "dimension",
+    "value": "0.25rem",
+    "cssVar": "--brand-radius-sm"
+   },
+   {
+    "path": "radius.md",
+    "type": "dimension",
+    "value": "0.5rem",
+    "cssVar": "--brand-radius-md"
+   },
+   {
+    "path": "radius.pill",
+    "type": "dimension",
+    "value": "999px",
+    "cssVar": "--brand-radius-pill"
+   },
+   {
+    "path": "motion.duration.fast",
+    "type": "duration",
+    "value": "120ms",
+    "cssVar": "--brand-motion-duration-fast"
+   },
+   {
+    "path": "motion.duration.base",
+    "type": "duration",
+    "value": "220ms",
+    "cssVar": "--brand-motion-duration-base"
+   }
+  ]
+ },
+ "logo": {
+  "id": "logo",
+  "variant": "primary",
+  "mediaType": "image/svg+xml",
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 32\"><path d=\"M4 26 L16 6 L28 26 Z\" fill=\"#1f6aa6\"/><path d=\"M14 26 L22 13 L30 26 Z\" fill=\"#7fb6dc\"/><text x=\"36\" y=\"22\" font-family=\"Georgia,serif\" font-weight=\"700\" font-size=\"16\" fill=\"#16191d\">Fjord</text></svg>",
+  "rules": {
+   "minSizePx": 24,
+   "clearSpace": "0.5x height",
+   "backgrounds": [
+    "color.surface.page",
+    "color.surface.raised"
+   ]
+  }
+ },
+ "check_brand": {
+  "fixture": false,
+  "findings": [
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 12,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#f7f7f4 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 27,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#ffffff is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 42,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#1f1e1d is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 58,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#64635e is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 73,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#dcdad2 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 87,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#f1efe8 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 102,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#b4b2a9 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 115,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#EEEDFE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 128,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#534AB7 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 141,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#3C3489 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 154,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#534AB7 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 167,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#E1F5EE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 180,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0F6E56 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 193,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#085041 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 206,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0F6E56 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 220,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#EAF3DE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 234,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#27500A is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 248,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#E6F1FB is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 262,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0C447C is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 276,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#FAEEDA is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 6,
+    "column": 290,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#633806 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 73,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#1c1b1a is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 88,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#262523 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 103,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#f1efe8 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 119,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#b4b2a9 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 134,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#3f3e3b is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 148,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#2c2c2a is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 163,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#5F5E5A is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 176,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#2f2a6b is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 189,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#AFA9EC is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 202,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#EEEDFE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 215,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#CECBF6 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 228,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0b3f33 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 241,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#5DCAA5 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 254,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#E1F5EE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 267,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#9FE1CB is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 281,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#27500A is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 295,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#EAF3DE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 309,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0C447C is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 323,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#E6F1FB is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 337,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#633806 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 7,
+    "column": 351,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#FAEEDA is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 31,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#1c1b1a is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 46,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#262523 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 61,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#f1efe8 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 77,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#b4b2a9 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 92,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#3f3e3b is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 106,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#2c2c2a is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 121,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#5F5E5A is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 134,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#2f2a6b is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 147,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#AFA9EC is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 160,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#EEEDFE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 173,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#CECBF6 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 186,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0b3f33 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 199,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#5DCAA5 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 212,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#E1F5EE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 225,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#9FE1CB is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 239,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#27500A is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 253,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#EAF3DE is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 267,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#0C447C is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 281,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#E6F1FB is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 295,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#633806 is not a brand colour",
+    "fix": "use a color.* token"
+   },
+   {
+    "file": ".scratch/brand-os-decided.html",
+    "line": 8,
+    "column": 309,
+    "rule": "off-brand-colour",
+    "severity": "error",
+    "message": "#FAEEDA is not a brand colour",
+    "fix": "use a color.* token"
+   }
+  ]
+ }
+}

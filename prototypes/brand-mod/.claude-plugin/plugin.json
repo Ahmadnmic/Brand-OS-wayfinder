@@ -1,0 +1,1 @@
+{ "name": "brand-os-proto", "version": "0.1.0", "description": "PROTOTYPE, throwaway: Brand OS brand pane and status line (wayfinder ticket #22)", "types": "./types/index.d.ts" }
