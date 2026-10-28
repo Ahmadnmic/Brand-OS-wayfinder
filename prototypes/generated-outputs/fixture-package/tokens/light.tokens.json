@@ -1,0 +1,57 @@
+{
+  "color": {
+    "surface": {
+      "page": {
+        "$type": "color",
+        "$value": "{color.palette.sand.50}",
+        "$description": "Page background"
+      },
+      "raised": {
+        "$type": "color",
+        "$value": "{color.palette.ink.50}",
+        "$description": "Cards and panels"
+      }
+    },
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.palette.ink.900}"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{color.palette.ink.600}"
+      },
+      "on-action": {
+        "$type": "color",
+        "$value": "{color.palette.ink.50}"
+      }
+    },
+    "action": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.palette.fjord.600}",
+        "$description": "Primary buttons and links"
+      },
+      "primary-hover": {
+        "$type": "color",
+        "$value": "{color.palette.fjord.700}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.palette.ink.200}"
+      }
+    },
+    "status": {
+      "error": {
+        "$type": "color",
+        "$value": "{color.palette.signal.red}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.palette.signal.green}"
+      }
+    }
+  }
+}

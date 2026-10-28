@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "./generated/brand.css";
+@import "./generated/tailwind.css";
+@source "../../demo-body.html";
+.plain-card { background: var(--fjord-color-surface-raised); color: var(--fjord-color-text-default); border-radius: var(--fjord-radius-md); padding: var(--fjord-space-lg); box-shadow: var(--fjord-shadow-card); font: var(--fjord-type-body); }
+.plain-card h2 { font: var(--fjord-type-heading); margin: 0 0 var(--fjord-space-sm); }
+.plain-card button { background: var(--fjord-color-action-primary); color: var(--fjord-color-text-on-action); border: 0; border-radius: var(--fjord-radius-pill); padding: var(--fjord-space-sm) var(--fjord-space-lg); font: var(--fjord-type-label); }

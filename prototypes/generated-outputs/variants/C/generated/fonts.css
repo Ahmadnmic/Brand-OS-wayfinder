@@ -1,0 +1,30 @@
+/* Fjord Display: provider google */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+/* WARNING: token family "Fjord Display" != provider family "Fraunces"; the browser will never match it */
+
+@font-face {
+  font-family: "Fjord Sans";
+  src: url("./fonts/FjordSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fjord Sans";
+  src: url("./fonts/FjordSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fjord Sans";
+  src: url("./fonts/FjordSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Licence (Fjord Sans): Licensed to Fjord Studio for web use https://example.com/licence */

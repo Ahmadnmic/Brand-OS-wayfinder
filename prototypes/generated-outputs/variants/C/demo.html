@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Variant C</title><link rel=stylesheet href=out.css></head><body style='margin:0'>
+<!-- PROTOTYPE demo component, identical markup in every variant -->
+<main class="min-h-screen bg-surface-page text-text-default font-sans text-body p-xl">
+  <h1 class="font-display text-display">Fjord Studio</h1>
+  <p class="text-text-muted text-label mb-lg">Generated Output prototype, variant <b>C</b></p>
+  <div class="grid gap-lg" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))">
+    <section id="root-card" class="bg-surface-raised rounded-md shadow-card p-lg border border-border-default">
+      <h2 class="font-display text-heading mb-sm">Tailwind card</h2>
+      <p class="mb-md">Mode follows the page root.</p>
+      <button class="bg-action-primary hover:bg-action-primary-hover text-text-on-action rounded-pill px-lg py-sm text-label transition-colors">Book a table</button>
+    </section>
+    <section data-mode="dark" id="nested-card" class="bg-surface-raised rounded-md shadow-card p-lg border border-border-default">
+      <h2 class="font-display text-heading mb-sm">Nested dark</h2>
+      <p class="mb-md">This section sets data-mode="dark" itself.</p>
+      <button class="bg-action-primary text-text-on-action rounded-pill px-lg py-sm text-label">Book a table</button>
+    </section>
+    <section id="css-card" class="plain-card">
+      <h2>Plain CSS card</h2>
+      <p>Uses brand.css variables directly, no Tailwind.</p>
+      <button>Book a table</button>
+    </section>
+  </div>
+</main>
+</body></html>

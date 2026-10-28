@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- PROTOTYPE, throwaway: compare three Generated Output conventions (wayfinder ticket #25). -->
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generated Outputs prototype</title>
+<style>
+  :root { --bg:#f6f6f4; --fg:#1b1d20; --muted:#666; --line:#ddd; --panel:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141517; --fg:#e8e8e6; --muted:#9a9a9a; --line:#333; --panel:#1d1f22; } }
+  body { margin:0; font:14px/1.5 system-ui, sans-serif; background:var(--bg); color:var(--fg); padding:16px 16px 90px; }
+  h1 { font-size:18px; margin:0 0 4px; } .muted { color:var(--muted); }
+  .grid { display:grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap:16px; margin-top:12px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  iframe { width:100%; height:560px; border:1px solid var(--line); border-radius:8px; background:#fff; }
+  .modes button, .bar button { font:inherit; border:1px solid var(--line); background:var(--panel); color:var(--fg); border-radius:6px; padding:4px 10px; cursor:pointer; }
+  .modes button[aria-pressed=true], .bar button[aria-pressed=true] { background:var(--fg); color:var(--bg); }
+  pre { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px; overflow:auto; max-height:520px; font-size:12px; }
+  .tabs button { font:inherit; border:0; background:none; color:var(--muted); padding:4px 8px; cursor:pointer; } .tabs button[aria-pressed=true] { color:var(--fg); border-bottom:2px solid var(--fg); }
+  .bar { position:fixed; left:50%; bottom:16px; transform:translateX(-50%); display:flex; gap:6px; align-items:center; background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:6px 10px; box-shadow:0 4px 16px rgb(0 0 0 / .15); }
+  ul { margin:6px 0; padding-left:18px; }
+</style></head><body>
+<h1>Generated Output conventions: variant <span id="vname"></span></h1>
+<p class="muted" id="vdesc"></p>
+<ul id="vnotes"></ul>
+<div class="modes">Mode on the demo page: <button data-m="os">Follow OS</button> <button data-m="light">data-mode=light</button> <button data-m="dark">data-mode=dark</button>
+  <span class="muted">The middle card always sets data-mode="dark" itself.</span></div>
+<div class="grid">
+  <iframe id="demo" title="Demo component"></iframe>
+  <div><div class="tabs" id="tabs"></div><pre id="file"></pre></div>
+</div>
+<div class="bar" id="bar"><span class="muted">Variant</span></div>
+<script>
+const V = {
+  A: { desc: "Terrazzo defaults: no prefix, [data-mode] only, rgb() values, full dark block, official Tailwind plugin with copied values, palette exposed.",
+       notes: ["OS dark preference is ignored: only data-mode switches.", "Nested data-mode works only because Tailwind and brand.css share variable names.", "Dark block repeats all 52 tokens.", "Typography in Tailwind points at --font-family-* (works here only because there is no prefix).", "Raw palette (bg-palette-fjord-600) sits beside semantic colours."] },
+  B: { desc: "Candidate: --brand- prefix, hex, OS preference with [data-mode] override, dark block lists only changed tokens, Tailwind @theme inline pointing at the CSS variables, palette hidden from Tailwind.",
+       notes: ["One mode mechanism drives Tailwind and plain CSS alike, at any depth.", "Needed @theme inline: a plain @theme resolves var() at :root, so nested data-mode failed.", "--color-*: initial removes Tailwind's default palette, so bg-blue-500 does not compile.", "Same variable names for every brand: components move between clients unchanged.",
+         "Refined after the agent test: [data-mode=light] works on any element; type-* utilities carry family, size, weight, line height and tracking in one class; Tailwind's default fonts, text sizes, radii and shadows are cleared (numeric spacing kept for layout), so rounded-lg, text-sm and bg-blue-500 no longer compile."] },
+  C: { desc: "--fjord- (brand id) prefix, hex, OS preference only, dark diff-only, official Tailwind plugin with copied values, palette exposed.",
+       notes: ["OS dark flips the plain CSS card but not the Tailwind cards: two outputs disagree.", "No manual override: a site cannot offer a light/dark toggle.", "Variable names change per brand, so component code is not portable across clients."] },
+};
+const files = ["generated/brand.css", "generated/tailwind.css", "generated/fonts.css", "generated/build.json", "terrazzo.config.mjs"];
+const params = new URLSearchParams(location.search);
+let v = params.get("variant") || "B", mode = params.get("mode") || "os", tab = 0;
+function render() {
+  document.getElementById("vname").textContent = v;
+  document.getElementById("vdesc").textContent = V[v].desc;
+  document.getElementById("vnotes").innerHTML = V[v].notes.map(n => `<li>${n}</li>`).join("");
+  const f = document.getElementById("demo"); f.src = `variants/${v}/demo.html`;
+  f.onload = () => { const r = f.contentDocument.documentElement; if (mode === "os") delete r.dataset.mode; else r.dataset.mode = mode; };
+  document.querySelectorAll(".modes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.m === mode));
+  document.querySelectorAll(".bar button").forEach(b => b.setAttribute("aria-pressed", b.textContent === v));
+  document.getElementById("tabs").innerHTML = files.map((n, i) => `<button aria-pressed="${i === tab}" data-i="${i}">${n.split("/").pop()}</button>`).join("");
+  fetch(`variants/${v}/${files[tab]}`).then(r => r.text()).then(t => document.getElementById("file").textContent = t);
+  history.replaceState(null, "", `?variant=${v}&mode=${mode}`);
+}
+for (const k of Object.keys(V)) { const b = document.createElement("button"); b.textContent = k; b.onclick = () => { v = k; render(); }; document.getElementById("bar").append(b); }
+document.querySelector(".modes").addEventListener("click", e => { if (e.target.dataset.m) { mode = e.target.dataset.m; render(); } });
+document.getElementById("tabs").addEventListener("click", e => { if (e.target.dataset.i) { tab = +e.target.dataset.i; render(); } });
+render();
+</script></body></html>

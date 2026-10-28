@@ -1,0 +1,48 @@
+{
+  "$schema": "https://brand-os.dev/schemas/brand-package/1.json",
+  "schemaVersion": 1,
+  "id": "fjord",
+  "name": "Fjord Studio",
+  "version": "1.0.0",
+  "tokens": {
+    "resolver": "tokens/brand.resolver.json"
+  },
+  "assets": [
+    {
+      "id": "font-fjord-sans",
+      "kind": "font",
+      "family": "Fjord Sans",
+      "files": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "src": "assets/fonts/FjordSans-Regular.woff2"
+        },
+        {
+          "weight": 500,
+          "style": "normal",
+          "src": "assets/fonts/FjordSans-Medium.woff2"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "src": "assets/fonts/FjordSans-Bold.woff2"
+        }
+      ],
+      "licence": {
+        "text": "Licensed to Fjord Studio for web use",
+        "url": "https://example.com/licence"
+      }
+    },
+    {
+      "id": "font-fjord-display",
+      "kind": "font",
+      "family": "Fjord Display",
+      "provider": "google",
+      "stylesheet": "https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap",
+      "providerFamily": "Fraunces"
+    }
+  ],
+  "references": [],
+  "generated": "generated/build.json"
+}

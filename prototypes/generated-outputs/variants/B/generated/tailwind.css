@@ -1,0 +1,56 @@
+/* Brand OS Tailwind v4 theme. Generated, never hand-edit. Import after "tailwindcss" and brand.css. */
+@theme inline {
+  --color-*: initial;
+  --font-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --color-action-primary: var(--brand-color-action-primary);
+  --color-action-primary-hover: var(--brand-color-action-primary-hover);
+  --color-border-default: var(--brand-color-border-default);
+  --color-status-error: var(--brand-color-status-error);
+  --color-status-success: var(--brand-color-status-success);
+  --color-surface-page: var(--brand-color-surface-page);
+  --color-surface-raised: var(--brand-color-surface-raised);
+  --color-text-default: var(--brand-color-text-default);
+  --color-text-muted: var(--brand-color-text-muted);
+  --color-text-on-action: var(--brand-color-text-on-action);
+  --font-display: var(--brand-font-family-display);
+  --font-sans: var(--brand-font-family-sans);
+  --font-weight-bold: var(--brand-font-weight-bold);
+  --font-weight-medium: var(--brand-font-weight-medium);
+  --font-weight-regular: var(--brand-font-weight-regular);
+  --spacing-space-2xl: var(--brand-space-2xl);
+  --spacing-space-lg: var(--brand-space-lg);
+  --spacing-space-md: var(--brand-space-md);
+  --spacing-space-sm: var(--brand-space-sm);
+  --spacing-space-xl: var(--brand-space-xl);
+  --spacing-space-xs: var(--brand-space-xs);
+  --radius-md: var(--brand-radius-md);
+  --radius-pill: var(--brand-radius-pill);
+  --radius-sm: var(--brand-radius-sm);
+  --shadow-card: var(--brand-shadow-card);
+  --ease-standard: var(--brand-motion-ease-standard);
+  --default-transition-duration: var(--brand-motion-duration-base);
+  --default-transition-timing-function: var(--brand-motion-ease-standard);
+}
+
+@utility type-body {
+  font: var(--brand-type-body);
+  letter-spacing: var(--brand-type-body-letter-spacing);
+}
+
+@utility type-display {
+  font: var(--brand-type-display);
+  letter-spacing: var(--brand-type-display-letter-spacing);
+}
+
+@utility type-heading {
+  font: var(--brand-type-heading);
+  letter-spacing: var(--brand-type-heading-letter-spacing);
+}
+
+@utility type-label {
+  font: var(--brand-type-label);
+  letter-spacing: var(--brand-type-label-letter-spacing);
+}

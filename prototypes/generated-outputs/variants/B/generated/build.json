@@ -1,0 +1,11 @@
+{
+  "brand": "fjord",
+  "version": "1.0.0",
+  "formats": {
+    "css": "brand.css",
+    "tailwind": "tailwind.css",
+    "fonts": "fonts.css"
+  },
+  "inputsSha256": "a148934b1cd53408cb84f9af552c99ba06d7bcd1a77deb58e8277c4eb3932b30",
+  "buildVersion": "0.0.0-prototype"
+}

@@ -1,0 +1,7 @@
+@theme {
+  @tz (mode: "light");
+}
+@custom-variant dark (&:where([data-mode="dark"], [data-mode="dark"] *));
+@variant dark {
+  @tz (mode: "dark");
+}
