@@ -63,6 +63,21 @@ _Avoid_: theme, colour scheme, variant
 
 **Generated Output**:
 A file built from a Brand Package's tokens and Package Manifest (CSS variables,
-a Tailwind theme, a font-face stylesheet), kept in the package and never
-hand-edited.
+a Tailwind theme, a font-face stylesheet), kept in the package, copied into
+each project that uses the brand, and never hand-edited in either place.
 _Avoid_: dist, build artifact, compiled tokens
+
+**Guest Brand**:
+A second Brand Package a project names beside its Active Brand, for co-branded
+work; only its Assets and References are used, never its Tokens.
+_Avoid_: secondary brand, partner brand, co-brand
+
+**Package Validation**:
+The check of a Brand Package against the Brand OS schema. Errors make the
+package invalid; warnings mark it valid but incomplete.
+_Avoid_: lint, Brand Check, audit
+
+**Brand Check**:
+The deterministic check of a project's code against its Active Brand: literal
+values that should be Tokens, stale Generated Outputs, altered Assets.
+_Avoid_: lint, audit, Package Validation, brand review
